@@ -7,8 +7,10 @@ class Solution {
             else if(word.charAt(i)>=97 && word.charAt(i)<= 122)
                 count2++;
         }
-        if(count == n ||count2 == n)
+        if(count == n)
         return true;
+        else if(count2 == n)
+            return true;
         else if(count == 1 && (word.charAt(0)>=65 && word.charAt(0)<= 90))
             return true;
         else 
