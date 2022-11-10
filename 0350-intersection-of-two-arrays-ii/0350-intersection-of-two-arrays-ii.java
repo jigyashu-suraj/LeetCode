@@ -2,16 +2,14 @@ class Solution {
     public int[] intersect(int[] nums1, int[] nums2) {
         Arrays.sort(nums1);
         Arrays.sort(nums2);
-        int n = nums1.length, m = nums2.length;
         int i = 0, j = 0;
         List<Integer> list = new ArrayList<>();
-        while(i < n && j < m){
-            int a = nums1[i], b= nums2[j];
-            if(a == b){
-                list.add(a);
+        while(i < nums1.length && j <  nums2.length){
+            if(nums1[i] == nums2[j]){
+                list.add(nums1[i]);
                 i++;
                 j++;
-            }else if(a < b){
+            }else if(nums1[i] < nums2[j]){
                 i++;
             }else{
                 j++;
