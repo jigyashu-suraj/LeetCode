@@ -5,7 +5,7 @@ class Solution {
         while(i<j){
          if(nums[i]==-nums[j])
                 return nums[j];
-        else if(-(nums[i])<nums[j])
+        else if(-nums[i]<nums[j])
                 j--;
             else 
                 i++;
