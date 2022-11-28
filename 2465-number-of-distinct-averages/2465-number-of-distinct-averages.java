@@ -1,6 +1,6 @@
 class Solution {
     public int distinctAverages(int[] nums) {
-        Arrays.sort(nums);
+         Arrays.sort(nums);
         Set<Double> st = new HashSet<Double>();
         int n = nums.length;
         int j = n -1;
@@ -9,5 +9,6 @@ class Solution {
             j--;
         }
         return st.size();
+        
     }
 }
